@@ -30,7 +30,7 @@ async function scrapeAndSaveArticles() {
     //Write File to CSV headers 
     const csvHeader = 'Title,Date,URL,Image URL,Publication\n';
 
-    //Data map throug articles array.
+    //Data map through articles array.
     const csvRows = articles.map(article => 
       `"${article.title}","${article.date}","${article.articleUrl}","${article.imageUrl}","${article.publication}"`
     ).join('\n');
